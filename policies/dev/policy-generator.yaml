@@ -1,0 +1,16 @@
+apiVersion: policy.open-cluster-management.io/v1
+kind: PolicyGenerator
+metadata:
+  name: dev-nginx-policy
+policyDefaults:
+  namespace: open-cluster-management-global-set
+  placement:
+    labelSelector:
+      matchLabels:
+        environment: dev
+policies:
+  - name: dev-nginx-app
+    remediationAction: enforce
+    manifests:
+      - path: hydrated-app.yaml
+

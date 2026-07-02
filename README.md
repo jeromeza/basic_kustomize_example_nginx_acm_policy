@@ -1,0 +1,1 @@
+# basic_kustomize_example_nginx
