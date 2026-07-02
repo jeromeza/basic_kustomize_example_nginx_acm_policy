@@ -25,6 +25,10 @@ To do this we make use of a policy-generator (policies/$ENV/policy-generator.yam
 
 ---
 
+Caveats:
+
+It does NOT create the namespace for the deployment (only tells the deployment which namespace to use). This has been explicitly left as a manual task, in order to show that policy can and will error - showing you exactly what issue has arisen.
+
 Commands:
 
 $ kustomize build overlays/dev > policies/dev/hydrated-app.yaml
