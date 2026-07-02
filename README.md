@@ -31,8 +31,8 @@ It does NOT create the namespace for the deployment (only tells the deployment w
 
 Commands:
 
-$ kustomize build overlays/dev > policies/dev/hydrated-app.yaml
-$ kustomize build policies/dev --enable-alpha-plugins
-
-$ kustomize build overlays/prod > policies/prod/hydrated-app.yaml
-$ kustomize build policies/prod --enable-alpha-plugins
+$ kustomize build overlays/dev > policies/dev/hydrated-app.yaml 
+$ kustomize build policies/dev --enable-alpha-plugins 
+ 
+$ kustomize build overlays/prod > policies/prod/hydrated-app.yaml 
+$ kustomize build policies/prod --enable-alpha-plugins 
